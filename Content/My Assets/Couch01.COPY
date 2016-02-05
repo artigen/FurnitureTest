@@ -1,0 +1,51 @@
+Begin Object Class=Blueprint Name="Couch01"
+   Begin Object Class=EdGraph Name="EventGraph"
+   End Object
+   Begin Object Class=EdGraph Name="UserConstructionScript"
+      Begin Object Class=K2Node_FunctionEntry Name="K2Node_FunctionEntry_365"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4095"
+         End Object
+      End Object
+   End Object
+   Begin Object Class=SceneThumbnailInfo Name="SceneThumbnailInfo_11"
+   End Object
+   Begin Object Name="EventGraph"
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      bAllowDeletion=False
+      GraphGuid=004B2EAD4B40CAA4F2467499A3836EE3
+   End Object
+   Begin Object Name="UserConstructionScript"
+      Begin Object Name="K2Node_FunctionEntry_365"
+         Begin Object Name="EdGraphPin_4095"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+         End Object
+         SignatureClass=Class'/Script/Engine.Actor'
+         SignatureName="UserConstructionScript"
+         Pins(0)=EdGraphPin'EdGraphPin_4095'
+         NodeGuid=D47AD77F43E6CE6AA453AC98596F88D3
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_FunctionEntry'K2Node_FunctionEntry_365'
+      bAllowDeletion=False
+      GraphGuid=18050A644D487D268F3FAB8B1D5AD95B
+   End Object
+   Begin Object Name="SceneThumbnailInfo_11"
+   End Object
+   ParentClass=Class'/Script/Engine.Actor'
+   SimpleConstructionScript=SimpleConstructionScript'Couch01_C:SimpleConstructionScript_2'
+   UbergraphPages(0)=EdGraph'EventGraph'
+   FunctionGraphs(0)=EdGraph'UserConstructionScript'
+   NewVariables(0)=(VarName="NewVar_0",VarGuid=ABA1A8A84B645C295A49F38D98480FC8,VarType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.Actor'),FriendlyName="New Var 0",Category="Default",PropertyFlags=67589)
+   NewVariables(1)=(VarName="NewVar_1",VarGuid=09D5ACF047305B8409E43CBE62F990E3,VarType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.SceneComponent'),FriendlyName="New Var 1",Category="Default",PropertyFlags=65541)
+   CategorySorting(0)="Default"
+   BlueprintSystemVersion=2
+   LastEditedDocuments(0)=(EditedObject=EdGraph'UserConstructionScript',SavedZoomAmount=1.000000)
+   LastEditedDocuments(1)=(EditedObject=EdGraph'EventGraph',SavedViewOffset=(X=-1914.978638,Y=-536.142517),SavedZoomAmount=0.375000)
+   ThumbnailInfo=SceneThumbnailInfo'SceneThumbnailInfo_11'
+   GeneratedClass=BlueprintGeneratedClass'Couch01_C'
+   bLegacyNeedToPurgeSkelRefs=False
+   bLegacyGeneratedClassIsAuthoritative=True
+   BlueprintGuid=D74955D249A40E87A60C0C9CF9C01CCC
+End Object
