@@ -1,659 +1,468 @@
-﻿[2016.02.12-21.34.16:200][  0]Log file open, 02/12/16 13:34:16
-[2016.02.12-21.34.16:200][  0]LogInit:Display: Running engine for game: FurnitureTest
-[2016.02.12-21.34.16:200][  0]LogPlatformFile: Not using cached read wrapper
-[2016.02.12-21.34.16:200][  0]LogInit:Display: RandInit(1917695998) SRandInit(1917696000).
-[2016.02.12-21.34.16:200][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2016.02.12-21.34.16:200][  0]LogStats: Stats thread started at 0.074869
-[2016.02.12-21.34.16:200][  0]LogInit: Version: 4.10.2-2818068+++depot+UE4-Releases+4.10
-[2016.02.12-21.34.16:200][  0]LogInit: API Version: 2758231
-[2016.02.12-21.34.16:200][  0]LogInit: Compiled (64-bit): Jan  6 2016 17:36:42
-[2016.02.12-21.34.16:200][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
-[2016.02.12-21.34.16:200][  0]LogInit: Build Configuration: Development
-[2016.02.12-21.34.16:200][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
-[2016.02.12-21.34.16:200][  0]LogInit: Command line:  
-[2016.02.12-21.34.16:200][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
-[2016.02.12-21.34.16:200][  0]LogInit: Rocket: 1
-[2016.02.12-21.34.16:214][  0]LogInit: Using libcurl 7.41.0
-[2016.02.12-21.34.16:214][  0]LogInit:  - built for x86_64-pc-win32
-[2016.02.12-21.34.16:214][  0]LogInit:  - supports SSL with WinSSL
-[2016.02.12-21.34.16:214][  0]LogInit:  - other features:
-[2016.02.12-21.34.16:214][  0]LogInit:      CURL_VERSION_SSL
-[2016.02.12-21.34.16:214][  0]LogInit:      CURL_VERSION_IPV6
-[2016.02.12-21.34.16:214][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2016.02.12-21.34.16:214][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2016.02.12-21.34.16:214][  0]LogInit:      CURL_VERSION_IDN
-[2016.02.12-21.34.16:214][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2016.02.12-21.34.16:214][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2016.02.12-21.34.16:214][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2016.02.12-21.34.16:214][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2016.02.12-21.34.16:214][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2016.02.12-21.34.16:224][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2016.02.12-21.34.16:232][  0]LogInit: Object subsystem initialized
-[2016.02.12-21.34.16:233][  0]LogInit: Selected Device Profile: [Windows]
-[2016.02.12-21.34.16:233][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.02.12-21.34.16:247][  0]LogInit: Computer: WN778
-[2016.02.12-21.34.16:247][  0]LogInit: User: user
-[2016.02.12-21.34.16:247][  0]LogInit: CPU Page size=4096, Cores=4
-[2016.02.12-21.34.16:247][  0]LogInit: High frequency timer resolution =3.914059 MHz
-[2016.02.12-21.34.16:247][  0]LogMemory: Memory total: Physical=32.0GB (32GB approx)
-[2016.02.12-21.34.16:247][  0]LogMemory: Platform Memory Stats for Windows
-[2016.02.12-21.34.16:247][  0]LogMemory: Process Physical Memory: 56.03 MB used, 56.03 MB peak
-[2016.02.12-21.34.16:247][  0]LogMemory: Process Virtual Memory: 58.71 MB used, 58.71 MB peak
-[2016.02.12-21.34.16:247][  0]LogMemory: Physical Memory: 7181.04 MB used, 32720.31 MB total
-[2016.02.12-21.34.16:247][  0]LogMemory: Virtual Memory: 384.78 MB used, 134217728.00 MB total
-[2016.02.12-21.34.16:306][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2016.02.12-21.34.16:769][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 980 Ti (Feature Level 11_0)
-[2016.02.12-21.34.16:769][  0]LogD3D11RHI: Adapter has 6047MB of dedicated video memory, 0MB of dedicated system memory, and 16360MB of shared system memory, 2 output[s]
-[2016.02.12-21.34.16:772][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
-[2016.02.12-21.34.16:772][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 16360MB of shared system memory, 0 output[s]
-[2016.02.12-21.34.16:772][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2016.02.12-21.34.16:778][  0]LogD3D11RHI: !Direct3DDevice
-[2016.02.12-21.34.16:778][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.02.12-21.34.16:799][  0]LogD3D11RHI: Async texture creation enabled
-[2016.02.12-21.34.16:810][  0]LogShaderCompilers: Guid format shader working directory is -15 characters bigger than the processId version (../../../../../../Users/user/Documents/GitHub/FurnitureTest/Intermediate/Shaders/WorkingDirectory/11464/).
-[2016.02.12-21.34.16:810][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/user/AppData/Local/Temp/UnrealShaderWorkingDir/9BC66523400CDEF5B4A203A4481938F3/'.
-[2016.02.12-21.34.16:810][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.02.12-21.34.17:944][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.02.12-21.34.17:951][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.02.12-21.34.17:957][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.02.12-21.34.17:964][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.02.12-21.34.17:970][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.02.12-21.34.17:976][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.02.12-21.34.17:981][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.02.12-21.34.17:985][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.02.12-21.34.17:990][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.02.12-21.34.17:994][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.02.12-21.34.17:999][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.02.12-21.34.18:009][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.02.12-21.34.18:009][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.02.12-21.34.18:010][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.02.12-21.34.18:029][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.02.12-21.34.18:034][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.02.12-21.34.18:038][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.02.12-21.34.18:043][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.02.12-21.34.18:044][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.02.12-21.34.18:158][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.02.12-21.34.18:209][  0]LogDerivedDataCache: Loaded boot cache 0.05s 41MB C:/Users/user/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.02.12-21.34.18:209][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/user/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
-[2016.02.12-21.34.18:209][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/user/Documents/GitHub/FurnitureTest/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.02.12-21.34.18:209][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.02.12-21.34.18:209][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/user/Documents/GitHub/FurnitureTest/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.02.12-21.34.18:209][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.02.12-21.34.18:289][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.02.12-21.34.18:302][  0]LogDerivedDataCache: Using Local data cache path C:/Users/user/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.02.12-21.34.18:576][  0]LogInit: Selected Device Profile: [Windows]
-[2016.02.12-21.34.18:579][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2016.02.12-21.34.18:725][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.02.12-21.34.18:725][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.02.12-21.34.19:015][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.02.12-21.34.20:637][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.02.12-21.34.20:750][  0]LogAssetRegistry: FAssetRegistry took 0.0107 seconds to start up
-[2016.02.12-21.34.20:973][  0]SourceControl: Info Source control is disabled
-[2016.02.12-21.34.20:975][  0]SourceControl: Info Source control is disabled
-[2016.02.12-21.34.20:990][  0]SourceControl: Info Source control is disabled
-[2016.02.12-21.34.21:005][  0]SourceControl: Info Source control is disabled
-[2016.02.12-21.34.21:346][  0]LogObj: 28633 objects as part of root set at end of initial load.
-[2016.02.12-21.34.21:346][  0]LogUObjectAllocator: 6099744 out of 0 bytes used by permanent object pool.
-[2016.02.12-21.34.21:423][  0]LogEngine: Initializing Engine...
-[2016.02.12-21.34.21:425][  0]OCULUS: Info: 02/12/16 21:34:21: [CAPI] LibOVR module is located at C:\WINDOWS\SYSTEM32\LibOVRRT64_0_8.dll
-
-[2016.02.12-21.34.21:426][  0]OCULUS: Info: 02/12/16 21:34:21: [IPC] Call Stats for SetInitialState : x1: C2S=26.8264, S2C=52.8863, Runtime=83.545 (microseconds) C2Ssize=80, S2Csize=81 (bytes)
-
-[2016.02.12-21.34.21:426][  0]OCULUS: Info: 02/12/16 21:34:21: [IPC] Call Stats for IsLatencyTesterAvailable : x1: C2S=19.4172, S2C=10.7305, Runtime=1.53294 (microseconds) C2Ssize=33, S2Csize=18 (bytes)
-
-[2016.02.12-21.34.21:426][  0]OCULUS: Info: 02/12/16 21:34:21: [IPC] Call Stats for Hmd_Create : x1: C2S=38.3234, S2C=38.5789, Runtime=13.5409 (microseconds) C2Ssize=19, S2Csize=171 (bytes)
-
-[2016.02.12-21.34.21:426][  0]OCULUS: Info: 02/12/16 21:34:21: [IPC] Call Stats for Hmd_GetHmdInfo : x1: C2S=10.2196, S2C=40.8783, Runtime=6.89821 (microseconds) C2Ssize=23, S2Csize=699 (bytes)
-
-[2016.02.12-21.34.21:427][  0]OCULUS: Info: 02/12/16 21:34:21: [IPC] Call Stats for SetNumberValue : x1: C2S=39.6008, S2C=40.8783, Runtime=7.66468 (microseconds) C2Ssize=55, S2Csize=25 (bytes)
-
-[2016.02.12-21.34.21:427][  0]OCULUS: Info: 02/12/16 21:34:21: [IPC] Call Stats for SetNumberValues : x1: C2S=17.3733, S2C=11.497, Runtime=6.64272 (microseconds) C2Ssize=81, S2Csize=25 (bytes)
-
-[2016.02.12-21.34.21:427][  0]OCULUS: Info: 02/12/16 21:34:21: [IPC] Call Stats for Hmd_SetEnabledCaps : x1: C2S=14.5629, S2C=9.4531, Runtime=42.4112 (microseconds) C2Ssize=35, S2Csize=33 (bytes)
-
-[2016.02.12-21.34.21:427][  0]OCULUS: Info: 02/12/16 21:34:21: [IPC] Call Stats for Hmd_ConfigureTracking : x1: C2S=17.6288, S2C=9.96408, Runtime=44.4551 (microseconds) C2Ssize=46, S2Csize=25 (bytes)
-
-[2016.02.12-21.34.21:427][  0]OCULUS: Info: 02/12/16 21:34:21: [IPC] Call Stats for Hmd_Release : x1: C2S=16.0958, S2C=10.2196, Runtime=33.4691 (microseconds) C2Ssize=20, S2Csize=25 (bytes)
-
-[2016.02.12-21.34.21:438][  0]LogHMD: Oculus plugin initialized. Version: 4.10.2-2818068+++depot+UE4-Releases+4.10, LibOVR: 0.8.0.0, built Jan  6 2016, 17:37:41
-[2016.02.12-21.34.21:616][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.02.12-21.34.21:633][  0]LogInit: XAudio2 using 'BenQ BL3200-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2016.02.12-21.34.21:642][  0]LogInit: FAudioDevice initialized.
-[2016.02.12-21.34.21:668][  0]LogDerivedDataCache: Saved boot cache 0.03s 41MB C:/Users/user/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.02.12-21.34.21:671][  0]LogInit: Texture streaming: Enabled
-[2016.02.12-21.34.21:684][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2016.02.12-21.34.21:684][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.2-2818068+++depot+UE4-Releases+4.10
-[2016.02.12-21.34.21:684][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 1459a27b4d96ed1f7e73e28557dc8af3|ca0ae43d583d4678afe1b2815dcce575|68ca2229-8980-4095-b04c-adaf04012a62
-[2016.02.12-21.34.21:684][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2016.02.12-21.34.21:698][  0]LogInit: Transaction tracking system initialized
-[2016.02.12-21.34.21:746][  0]BlueprintLog: New page: Editor Load
-[2016.02.12-21.34.21:880][  0]LocalizationService: Info Localization service is disabled
-[2016.02.12-21.34.22:000][  0]LogConsoleResponse:Display: 
-[2016.02.12-21.34.22:288][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2016.02.12-21.34.22:387][  0]LogFileCache: Scanning file cache for directory 'C:/Users/user/Documents/GitHub/FurnitureTest/Content/' took 0.02s
-[2016.02.12-21.34.22:387][  0]SourceControl: Info Source control is disabled
-[2016.02.12-21.34.22:387][  0]Cmd: MAP LOAD FILE="../../../../../../Users/user/Documents/GitHub/FurnitureTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.02.12-21.34.22:388][  0]LightingResults: New page: Lighting Build
-[2016.02.12-21.34.22:393][  0]MapCheck: New page: Map Check
-[2016.02.12-21.34.22:393][  0]LightingResults: New page: Lighting Build
-[2016.02.12-21.34.22:407][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001957C2E6AC0
-[2016.02.12-21.34.22:976][  0]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
-[2016.02.12-21.34.23:303][  0]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT)
-[2016.02.12-21.34.23:317][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
-[2016.02.12-21.34.23:410][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1)
-[2016.02.12-21.34.23:422][  0]LogTexture:Display: Building textures: SkyOcclusion0_1 (AutoDXT)
-[2016.02.12-21.34.23:570][  0]LogTexture:Display: Building textures: SkyOcclusion0_2 (AutoDXT)
-[2016.02.12-21.34.23:576][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (G8)
-[2016.02.12-21.34.23:598][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (G8)
-[2016.02.12-21.34.23:665][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.02.12-21.34.23:679][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.02.12-21.34.23:680][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.02.12-21.34.23:847][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 167.121ms to complete.
-[2016.02.12-21.34.23:847][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 1.460
-[2016.02.12-21.34.23:971][  0]LogCollectionManager: Loaded 0 collections in 0.002569 seconds
-[2016.02.12-21.34.24:025][  0]LogFileCache: Scanning file cache for directory 'C:/Users/user/Documents/GitHub/FurnitureTest/Saved/Collections/' took 0.01s
-[2016.02.12-21.34.24:025][  0]LogFileCache: Scanning file cache for directory 'C:/Users/user/Documents/GitHub/FurnitureTest/Content/Developers/user/Collections/' took 0.01s
-[2016.02.12-21.34.24:025][  0]LogFileCache: Scanning file cache for directory 'C:/Users/user/Documents/GitHub/FurnitureTest/Content/Collections/' took 0.01s
-[2016.02.12-21.34.24:025][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
-[2016.02.12-21.34.24:033][  0]LogContentBrowser: Native class hierarchy populated in 0.0082 seconds. Added 1893 classes and 338 folders.
-[2016.02.12-21.34.24:041][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2016.02.12-21.34.24:110][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2016.02.12-21.34.24:152][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.02.12-21.34.24:159][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.02.12-21.34.24:183][  0]LogLoad: Full Startup: 8.51 seconds (BP compile: 0.14 seconds)
-[2016.02.12-21.34.24:191][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.02.12-21.34.24:191][  0]LogOcInput: OculusInput is initialized. Init status 0. Runtime version: 0.8.0.0
-[2016.02.12-21.34.24:251][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.02.12-21.34.24:419][  0]LogRenderer: Reallocating scene render targets to support 1572x992 (Frame:2).
-[2016.02.12-21.34.24:604][  4]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 402/400 MB (ok in editor, bad on fixed memory platform)
-[2016.02.12-21.34.24:686][  6]LogAssetRegistry: Asset discovery search completed in 3.9465 seconds
-[2016.02.12-21.34.24:686][  6]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.02.12-21.34.24:686][  6]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000043 seconds (updated 0 objects)
-[2016.02.12-21.34.30:214][619]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2016.02.12-21.34.30:880][619]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0013 seconds. Added 107 classes and 0 folders.
-[2016.02.12-21.34.31:438][619]LogLinker:Warning: Can't resolve asset name
-[2016.02.12-21.34.35:399][858]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.34.35:399][858]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.02.12-21.34.35:399][858]OCULUS: Info: 02/12/16 21:34:35: [IPC] Call Stats for Hmd_Create : x1: C2S=35.002, S2C=20.4391, Runtime=21.4611 (microseconds) C2Ssize=19, S2Csize=171 (bytes)
-
-[2016.02.12-21.34.35:400][858]OCULUS: Info: 02/12/16 21:34:35: [IPC] Call Stats for Hmd_GetHmdInfo : x1: C2S=17.8842, S2C=18.1397, Runtime=10.986 (microseconds) C2Ssize=23, S2Csize=699 (bytes)
-
-[2016.02.12-21.34.35:400][858]OCULUS: Info: 02/12/16 21:34:35: [IPC] Call Stats for SetNumberValue : x1: C2S=16.8623, S2C=10.7305, Runtime=9.19761 (microseconds) C2Ssize=55, S2Csize=25 (bytes)
-
-[2016.02.12-21.34.35:400][858]OCULUS: Info: 02/12/16 21:34:35: [IPC] Call Stats for SetNumberValues : x1: C2S=16.3513, S2C=10.986, Runtime=6.89821 (microseconds) C2Ssize=81, S2Csize=25 (bytes)
-
-[2016.02.12-21.34.35:400][858]OCULUS: Info: 02/12/16 21:34:35: [IPC] Call Stats for Hmd_SetEnabledCaps : x1: C2S=16.3513, S2C=16.8623, Runtime=48.032 (microseconds) C2Ssize=35, S2Csize=33 (bytes)
-
-[2016.02.12-21.34.35:400][858]OCULUS: Info: 02/12/16 21:34:35: [IPC] Call Stats for Hmd_ConfigureTracking : x1: C2S=22.2276, S2C=10.4751, Runtime=40.1118 (microseconds) C2Ssize=46, S2Csize=25 (bytes)
-
-[2016.02.12-21.34.35:401][858]LogHMD:Warning: HMD Oculus Rift DK2, res = 1920 x 1080
-[2016.02.12-21.34.35:401][858]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 5:34:35 AM)
-[2016.02.12-21.34.35:401][858]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.02.12-21.34.35:455][858]LogPlayLevel: PIE: StaticDuplicateObject took: (0.053622s)
-[2016.02.12-21.34.35:456][858]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.02.12-21.34.35:456][858]LogPlayLevel: PIE: World Init took: (0.001419s)
-[2016.02.12-21.34.35:456][858]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.055429s)
-[2016.02.12-21.34.35:542][858]LogInit: XAudio2 using 'BenQ BL3200-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2016.02.12-21.34.35:549][858]LogInit: FAudioDevice initialized.
-[2016.02.12-21.34.35:622][858]LogWorld: Game class is 'ThirdPersonGameMode_C'
-[2016.02.12-21.34.35:635][858]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-13.34.35
-[2016.02.12-21.34.35:636][858]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.34.35:636][858]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.34.35:637][858]LogWorld: Bringing up level for play took: 0.012199
-[2016.02.12-21.34.35:640][858]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.478
-[2016.02.12-21.34.35:640][858]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.34.35:710][859]OCULUS: Info: 02/12/16 21:34:35: [From Service] 02/12/16 21:34:35: [Sensor2Impl] Lost 4 IMU samples: 5997 2 6
-
-[2016.02.12-21.34.42:932][358]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.34.42:932][358]OCULUS: Info: 02/12/16 21:34:42: [IPC] Call Stats for Hmd_Release : x1: C2S=28.3593, S2C=12.519, Runtime=61.5729 (microseconds) C2Ssize=20, S2Csize=25 (bytes)
-
-[2016.02.12-21.34.42:985][358]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.34.43:044][358]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001954E346E80
-[2016.02.12-21.44.59:725][813]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2016.02.12-21.45.00:166][813]LogSavePackage: Save=359.350220ms
-[2016.02.12-21.45.00:166][813]LogSavePackage: Moving '../../../../../../Users/user/Documents/GitHub/FurnitureTest/Saved/ThirdPersonExampleMap_Auto19FE7BAAB41CD49BEBA81589A8AD04170.tmp' to '../../../../../../Users/user/Documents/GitHub/FurnitureTest/Saved/Autosaves/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap_Auto1.umap'
-[2016.02.12-21.45.00:170][813]LogSavePackage: Total save time: 386.321466ms
-[2016.02.12-21.45.00:171][813]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/user/Documents/GitHub/FurnitureTest/Saved/Autosaves/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap_Auto1.umap
-[2016.02.12-21.45.00:173][813]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.450
-[2016.02.12-21.45.00:173][813]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.450
-[2016.02.12-21.47.45:491][876]BlueprintLog: New page: Compile ThirdPersonExampleMap
-[2016.02.12-21.47.45:613][876]BlueprintEditorCompileResults: Info [0809.94] Compile of ThirdPersonExampleMap successful! [in 122 ms]
-[2016.02.12-21.47.46:538][951]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.47.46:538][951]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.02.12-21.47.46:539][951]OCULUS: Info: 02/12/16 21:47:46: [IPC] Call Stats for Hmd_Create : x1: C2S=57.7406, S2C=13.5409, Runtime=19.9282 (microseconds) C2Ssize=19, S2Csize=171 (bytes)
-
-[2016.02.12-21.47.46:539][951]OCULUS: Info: 02/12/16 21:47:46: [IPC] Call Stats for Hmd_GetHmdInfo : x1: C2S=41.6447, S2C=14.8184, Runtime=10.7305 (microseconds) C2Ssize=23, S2Csize=699 (bytes)
-
-[2016.02.12-21.47.46:539][951]OCULUS: Info: 02/12/16 21:47:46: [IPC] Call Stats for SetNumberValue : x1: C2S=45.2216, S2C=10.2196, Runtime=10.2196 (microseconds) C2Ssize=55, S2Csize=25 (bytes)
-
-[2016.02.12-21.47.46:539][951]OCULUS: Info: 02/12/16 21:47:46: [IPC] Call Stats for SetNumberValues : x1: C2S=42.1557, S2C=9.96408, Runtime=8.43115 (microseconds) C2Ssize=81, S2Csize=25 (bytes)
-
-[2016.02.12-21.47.46:539][951]OCULUS: Info: 02/12/16 21:47:46: [IPC] Call Stats for Hmd_SetEnabledCaps : x1: C2S=43.4332, S2C=15.8403, Runtime=52.3753 (microseconds) C2Ssize=35, S2Csize=33 (bytes)
-
-[2016.02.12-21.47.46:539][951]OCULUS: Info: 02/12/16 21:47:46: [IPC] Call Stats for Hmd_ConfigureTracking : x2: C2S=17.3733, S2C=9.58085, Runtime=35.7685 (microseconds) C2Ssize=46, S2Csize=25 (bytes)
-
-[2016.02.12-21.47.46:540][951]LogHMD:Warning: HMD Oculus Rift DK2, res = 1920 x 1080
-[2016.02.12-21.47.46:540][951]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 5:47:46 AM)
-[2016.02.12-21.47.46:540][951]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.02.12-21.47.46:579][951]LogPlayLevel: PIE: StaticDuplicateObject took: (0.038494s)
-[2016.02.12-21.47.46:580][951]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.02.12-21.47.46:581][951]LogPlayLevel: PIE: World Init took: (0.001810s)
-[2016.02.12-21.47.46:581][951]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.040660s)
-[2016.02.12-21.47.46:645][951]LogInit: XAudio2 using 'BenQ BL3200-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2016.02.12-21.47.46:652][951]LogInit: FAudioDevice initialized.
-[2016.02.12-21.47.46:695][951]LogWorld: Game class is 'ThirdPersonGameMode_C'
-[2016.02.12-21.47.46:706][951]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-13.47.46
-[2016.02.12-21.47.46:707][951]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.47.46:707][951]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.47.46:708][951]LogWorld: Bringing up level for play took: 0.010607
-[2016.02.12-21.47.46:709][951]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.453
-[2016.02.12-21.47.46:710][951]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.47.47:069][980]OCULUS: Info: 02/12/16 21:47:47: [From Service] 02/12/16 21:47:47: [Sensor2Impl] Lost 7 IMU samples: 8995 2 9
-
-[2016.02.12-21.48.26:523][629]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.48.26:525][629]OCULUS: Info: 02/12/16 21:48:26: [IPC] Call Stats for Hmd_Release : x1: C2S=57.2296, S2C=11.7525, Runtime=45.2216 (microseconds) C2Ssize=20, S2Csize=25 (bytes)
-
-[2016.02.12-21.48.26:564][629]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.48.26:616][630]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001956FFDE520
-[2016.02.12-21.48.38:937][690]BlueprintLog: New page: Compile ThirdPersonExampleMap
-[2016.02.12-21.48.39:057][690]BlueprintEditorCompileResults: Info [0863.39] Compile of ThirdPersonExampleMap successful! [in 119 ms]
-[2016.02.12-21.48.39:817][750]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.48.39:817][750]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.02.12-21.48.39:817][750]OCULUS: Info: 02/12/16 21:48:39: [IPC] Call Stats for Hmd_Create : x1: C2S=20.9501, S2C=45.7326, Runtime=16.0958 (microseconds) C2Ssize=19, S2Csize=171 (bytes)
-
-[2016.02.12-21.48.39:817][750]OCULUS: Info: 02/12/16 21:48:39: [IPC] Call Stats for Hmd_GetHmdInfo : x1: C2S=11.7525, S2C=55.1857, Runtime=7.40919 (microseconds) C2Ssize=23, S2Csize=699 (bytes)
-
-[2016.02.12-21.48.39:818][750]OCULUS: Info: 02/12/16 21:48:39: [IPC] Call Stats for SetNumberValue : x1: C2S=12.2635, S2C=52.1198, Runtime=6.64272 (microseconds) C2Ssize=55, S2Csize=25 (bytes)
-
-[2016.02.12-21.48.39:818][750]OCULUS: Info: 02/12/16 21:48:39: [IPC] Call Stats for SetNumberValues : x1: C2S=12.2635, S2C=15.3294, Runtime=4.34332 (microseconds) C2Ssize=81, S2Csize=25 (bytes)
-
-[2016.02.12-21.48.39:818][750]OCULUS: Info: 02/12/16 21:48:39: [IPC] Call Stats for Hmd_SetEnabledCaps : x1: C2S=51.3533, S2C=13.2854, Runtime=36.535 (microseconds) C2Ssize=35, S2Csize=33 (bytes)
-
-[2016.02.12-21.48.39:818][750]OCULUS: Info: 02/12/16 21:48:39: [IPC] Call Stats for Hmd_ConfigureTracking : x2: C2S=37.8124, S2C=9.06987, Runtime=31.9362 (microseconds) C2Ssize=46, S2Csize=25 (bytes)
-
-[2016.02.12-21.48.39:818][750]LogHMD:Warning: HMD Oculus Rift DK2, res = 1920 x 1080
-[2016.02.12-21.48.39:819][750]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 5:48:39 AM)
-[2016.02.12-21.48.39:819][750]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.02.12-21.48.39:852][750]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033686s)
-[2016.02.12-21.48.39:853][750]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.02.12-21.48.39:853][750]LogPlayLevel: PIE: World Init took: (0.001036s)
-[2016.02.12-21.48.39:854][750]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.034999s)
-[2016.02.12-21.48.39:902][750]LogInit: XAudio2 using 'BenQ BL3200-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2016.02.12-21.48.39:907][750]LogInit: FAudioDevice initialized.
-[2016.02.12-21.48.39:948][750]LogWorld: Game class is 'ThirdPersonGameMode_C'
-[2016.02.12-21.48.39:957][750]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-13.48.39
-[2016.02.12-21.48.39:958][750]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.48.39:958][750]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.48.39:958][750]LogWorld: Bringing up level for play took: 0.008279
-[2016.02.12-21.48.39:960][750]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.798
-[2016.02.12-21.48.39:960][750]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.48.40:267][774]OCULUS: Info: 02/12/16 21:48:40: [From Service] 02/12/16 21:48:40: [Sensor2Impl] Lost 13 IMU samples: 14992 2 15
-
-[2016.02.12-21.49.00:181][471]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.49.00:183][471]OCULUS: Info: 02/12/16 21:49:00: [IPC] Call Stats for Hmd_Release : x1: C2S=50.8424, S2C=9.4531, Runtime=89.1657 (microseconds) C2Ssize=20, S2Csize=25 (bytes)
-
-[2016.02.12-21.49.00:221][471]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.49.00:271][472]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000195889AA160
-[2016.02.12-21.49.05:397][896]BlueprintLog: New page: Compile ThirdPersonExampleMap
-[2016.02.12-21.49.05:513][896]BlueprintEditorCompileResults: Info [0889.84] Compile of ThirdPersonExampleMap successful! [in 115 ms]
-[2016.02.12-21.49.06:323][961]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.49.06:323][961]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.02.12-21.49.06:323][961]OCULUS: Info: 02/12/16 21:49:06: [IPC] Call Stats for Hmd_Create : x1: C2S=52.3753, S2C=42.4112, Runtime=17.6288 (microseconds) C2Ssize=19, S2Csize=171 (bytes)
-
-[2016.02.12-21.49.06:323][961]OCULUS: Info: 02/12/16 21:49:06: [IPC] Call Stats for Hmd_GetHmdInfo : x1: C2S=46.499, S2C=46.7545, Runtime=8.17566 (microseconds) C2Ssize=23, S2Csize=699 (bytes)
-
-[2016.02.12-21.49.06:324][961]OCULUS: Info: 02/12/16 21:49:06: [IPC] Call Stats for SetNumberValue : x1: C2S=44.4551, S2C=43.1777, Runtime=7.92017 (microseconds) C2Ssize=55, S2Csize=25 (bytes)
-
-[2016.02.12-21.49.06:324][961]OCULUS: Info: 02/12/16 21:49:06: [IPC] Call Stats for SetNumberValues : x1: C2S=47.01, S2C=43.6887, Runtime=7.92017 (microseconds) C2Ssize=81, S2Csize=25 (bytes)
-
-[2016.02.12-21.49.06:324][961]OCULUS: Info: 02/12/16 21:49:06: [IPC] Call Stats for Hmd_SetEnabledCaps : x1: C2S=47.521, S2C=12.008, Runtime=36.7905 (microseconds) C2Ssize=35, S2Csize=33 (bytes)
-
-[2016.02.12-21.49.06:324][961]OCULUS: Info: 02/12/16 21:49:06: [IPC] Call Stats for Hmd_ConfigureTracking : x2: C2S=34.1078, S2C=14.3074, Runtime=28.4871 (microseconds) C2Ssize=46, S2Csize=25 (bytes)
-
-[2016.02.12-21.49.06:324][961]LogHMD:Warning: HMD Oculus Rift DK2, res = 1920 x 1080
-[2016.02.12-21.49.06:325][961]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 5:49:06 AM)
-[2016.02.12-21.49.06:325][961]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.02.12-21.49.06:358][961]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033070s)
-[2016.02.12-21.49.06:359][961]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.02.12-21.49.06:359][961]LogPlayLevel: PIE: World Init took: (0.001046s)
-[2016.02.12-21.49.06:359][961]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.034421s)
-[2016.02.12-21.49.06:410][961]LogInit: XAudio2 using 'BenQ BL3200-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2016.02.12-21.49.06:415][961]LogInit: FAudioDevice initialized.
-[2016.02.12-21.49.06:432][961]OCULUS: Info: 02/12/16 21:49:06: [From Service] 02/12/16 21:49:06: [Sensor2Impl] Lost 3 IMU samples: 4998 2 5
-
-[2016.02.12-21.49.06:456][961]LogWorld: Game class is 'ThirdPersonGameMode_C'
-[2016.02.12-21.49.06:465][961]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-13.49.06
-[2016.02.12-21.49.06:465][961]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.49.06:465][961]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.49.06:466][961]LogWorld: Bringing up level for play took: 0.007865
-[2016.02.12-21.49.06:467][961]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.695
-[2016.02.12-21.49.06:467][961]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.49.13:204][545]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03B0
-[2016.02.12-21.49.13:204][545]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.13:204][545]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03E2
-[2016.02.12-21.49.13:204][545]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.13:793][600]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03B0
-[2016.02.12-21.49.13:794][600]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.13:794][600]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03E2
-[2016.02.12-21.49.13:794][600]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.14:131][630]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03B0
-[2016.02.12-21.49.14:131][630]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.14:132][630]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03E2
-[2016.02.12-21.49.14:132][630]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.14:391][652]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03B0
-[2016.02.12-21.49.14:391][652]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.14:391][652]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03E2
-[2016.02.12-21.49.14:392][652]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.14:625][672]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03B0
-[2016.02.12-21.49.14:625][672]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.14:625][672]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03E2
-[2016.02.12-21.49.14:626][672]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.14:867][692]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03B0
-[2016.02.12-21.49.14:867][692]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.14:868][692]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03E2
-[2016.02.12-21.49.14:868][692]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.15:074][709]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03B0
-[2016.02.12-21.49.15:075][709]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.15:075][709]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03E2
-[2016.02.12-21.49.15:075][709]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.15:259][724]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03B0
-[2016.02.12-21.49.15:259][724]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.15:259][724]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03E2
-[2016.02.12-21.49.15:259][724]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.16:219][807]LogScript:Warning: Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
-	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_1
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:03B0
-[2016.02.12-21.49.16:219][807]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.16:219][807]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.16:435][828]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.16:435][828]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.16:611][844]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.16:611][844]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.16:756][856]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.16:756][856]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.16:921][870]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.16:921][870]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.17:075][883]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.17:075][883]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.17:242][897]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.17:242][897]PIE:Error: Error Cannot access 'couch_BP_C_5'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.49.27:403][713]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.49.27:405][713]OCULUS: Info: 02/12/16 21:49:27: [IPC] Call Stats for Hmd_Release : x1: C2S=55.4412, S2C=17.1178, Runtime=41.3893 (microseconds) C2Ssize=20, S2Csize=25 (bytes)
-
-[2016.02.12-21.49.27:446][713]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.49.27:483][713]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000195215F99E0
-[2016.02.12-21.50.30:986][107]BlueprintLog: New page: Compile ThirdPersonExampleMap
-[2016.02.12-21.50.31:090][107]BlueprintEditorCompileResults: Info [0975.42] Compile of ThirdPersonExampleMap successful! [in 103 ms]
-[2016.02.12-21.50.31:989][188]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.50.31:989][188]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.02.12-21.50.31:989][188]OCULUS: Info: 02/12/16 21:50:31: [IPC] Call Stats for Hmd_Create : x1: C2S=53.9082, S2C=43.4332, Runtime=13.5409 (microseconds) C2Ssize=19, S2Csize=171 (bytes)
-
-[2016.02.12-21.50.31:989][188]OCULUS: Info: 02/12/16 21:50:31: [IPC] Call Stats for Hmd_GetHmdInfo : x1: C2S=45.2216, S2C=15.0739, Runtime=7.92017 (microseconds) C2Ssize=23, S2Csize=699 (bytes)
-
-[2016.02.12-21.50.31:990][188]OCULUS: Info: 02/12/16 21:50:31: [IPC] Call Stats for SetNumberValue : x1: C2S=46.499, S2C=38.3234, Runtime=7.1537 (microseconds) C2Ssize=55, S2Csize=25 (bytes)
-
-[2016.02.12-21.50.31:990][188]OCULUS: Info: 02/12/16 21:50:31: [IPC] Call Stats for SetNumberValues : x1: C2S=46.499, S2C=45.4771, Runtime=7.40919 (microseconds) C2Ssize=81, S2Csize=25 (bytes)
-
-[2016.02.12-21.50.31:991][188]OCULUS: Info: 02/12/16 21:50:31: [IPC] Call Stats for Hmd_SetEnabledCaps : x1: C2S=55.9521, S2C=13.2854, Runtime=36.2795 (microseconds) C2Ssize=35, S2Csize=33 (bytes)
-
-[2016.02.12-21.50.31:991][188]OCULUS: Info: 02/12/16 21:50:31: [IPC] Call Stats for Hmd_ConfigureTracking : x2: C2S=32.0639, S2C=9.96408, Runtime=27.5928 (microseconds) C2Ssize=46, S2Csize=25 (bytes)
-
-[2016.02.12-21.50.31:991][188]LogHMD:Warning: HMD Oculus Rift DK2, res = 1920 x 1080
-[2016.02.12-21.50.31:991][188]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 5:50:31 AM)
-[2016.02.12-21.50.31:991][188]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.02.12-21.50.32:027][188]LogPlayLevel: PIE: StaticDuplicateObject took: (0.035916s)
-[2016.02.12-21.50.32:028][188]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.02.12-21.50.32:028][188]LogPlayLevel: PIE: World Init took: (0.000910s)
-[2016.02.12-21.50.32:028][188]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.037077s)
-[2016.02.12-21.50.32:073][188]LogInit: XAudio2 using 'BenQ BL3200-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2016.02.12-21.50.32:079][188]LogInit: FAudioDevice initialized.
-[2016.02.12-21.50.32:122][188]LogWorld: Game class is 'ThirdPersonGameMode_C'
-[2016.02.12-21.50.32:131][188]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-13.50.32
-[2016.02.12-21.50.32:131][188]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.50.32:132][188]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.50.32:132][188]LogWorld: Bringing up level for play took: 0.008288
-[2016.02.12-21.50.32:134][188]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.972
-[2016.02.12-21.50.32:134][188]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.50.32:155][188]OCULUS: Info: 02/12/16 21:50:32: [From Service] 02/12/16 21:50:32: [Sensor2Impl] Lost 5 IMU samples: 5997 2 7
-
-[2016.02.12-21.50.46:569][505]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+﻿[2016.02.12-22.18.36:952][  0]Log file open, 02/12/16 14:18:36
+[2016.02.12-22.18.36:952][  0]LogInit:Display: Running engine for game: FurnitureTest
+[2016.02.12-22.18.36:952][  0]LogPlatformFile: Not using cached read wrapper
+[2016.02.12-22.18.36:952][  0]LogInit:Display: RandInit(181502089) SRandInit(181502090).
+[2016.02.12-22.18.36:952][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2016.02.12-22.18.36:952][  0]LogStats: Stats thread started at 0.059990
+[2016.02.12-22.18.36:952][  0]LogInit: Version: 4.10.2-2818068+++depot+UE4-Releases+4.10
+[2016.02.12-22.18.36:952][  0]LogInit: API Version: 2758231
+[2016.02.12-22.18.36:952][  0]LogInit: Compiled (64-bit): Jan  6 2016 17:36:42
+[2016.02.12-22.18.36:952][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2016.02.12-22.18.36:952][  0]LogInit: Build Configuration: Development
+[2016.02.12-22.18.36:952][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.02.12-22.18.36:952][  0]LogInit: Command line:  
+[2016.02.12-22.18.36:952][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
+[2016.02.12-22.18.36:952][  0]LogInit: Rocket: 1
+[2016.02.12-22.18.36:955][  0]LogInit: Using libcurl 7.41.0
+[2016.02.12-22.18.36:955][  0]LogInit:  - built for x86_64-pc-win32
+[2016.02.12-22.18.36:955][  0]LogInit:  - supports SSL with WinSSL
+[2016.02.12-22.18.36:955][  0]LogInit:  - other features:
+[2016.02.12-22.18.36:955][  0]LogInit:      CURL_VERSION_SSL
+[2016.02.12-22.18.36:955][  0]LogInit:      CURL_VERSION_IPV6
+[2016.02.12-22.18.36:955][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.02.12-22.18.36:955][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.02.12-22.18.36:955][  0]LogInit:      CURL_VERSION_IDN
+[2016.02.12-22.18.36:955][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.02.12-22.18.36:955][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.02.12-22.18.36:955][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.02.12-22.18.36:955][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.02.12-22.18.36:955][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.02.12-22.18.36:959][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.02.12-22.18.36:963][  0]LogInit: Object subsystem initialized
+[2016.02.12-22.18.36:963][  0]LogInit: Selected Device Profile: [Windows]
+[2016.02.12-22.18.36:963][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.02.12-22.18.36:970][  0]LogInit: Computer: DESKTOP-34TI0UK
+[2016.02.12-22.18.36:970][  0]LogInit: User: Roland
+[2016.02.12-22.18.36:970][  0]LogInit: CPU Page size=4096, Cores=4
+[2016.02.12-22.18.36:970][  0]LogInit: High frequency timer resolution =3.906246 MHz
+[2016.02.12-22.18.36:970][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.02.12-22.18.36:970][  0]LogMemory: Platform Memory Stats for Windows
+[2016.02.12-22.18.36:970][  0]LogMemory: Process Physical Memory: 55.92 MB used, 55.92 MB peak
+[2016.02.12-22.18.36:970][  0]LogMemory: Process Virtual Memory: 58.66 MB used, 58.66 MB peak
+[2016.02.12-22.18.36:970][  0]LogMemory: Physical Memory: 4989.18 MB used, 16324.19 MB total
+[2016.02.12-22.18.36:970][  0]LogMemory: Virtual Memory: 384.68 MB used, 134217728.00 MB total
+[2016.02.12-22.18.36:995][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.02.12-22.18.37:269][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 980 Ti (Feature Level 11_0)
+[2016.02.12-22.18.37:269][  0]LogD3D11RHI: Adapter has 6047MB of dedicated video memory, 0MB of dedicated system memory, and 8162MB of shared system memory, 2 output[s]
+[2016.02.12-22.18.37:270][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.02.12-22.18.37:270][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8162MB of shared system memory, 0 output[s]
+[2016.02.12-22.18.37:270][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.02.12-22.18.37:273][  0]LogD3D11RHI: !Direct3DDevice
+[2016.02.12-22.18.37:273][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.02.12-22.18.37:283][  0]LogD3D11RHI: Async texture creation enabled
+[2016.02.12-22.18.37:297][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (../../../../../../Users/Roland/Documents/Unreal Projects/FurnitureTest/Intermediate/Shaders/WorkingDirectory/9748/).
+[2016.02.12-22.18.37:297][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Roland/AppData/Local/Temp/UnrealShaderWorkingDir/E0F52EB248D73E327C04289ADBBB8AE6/'.
+[2016.02.12-22.18.37:297][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.02.12-22.18.37:828][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.02.12-22.18.37:831][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.02.12-22.18.37:833][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.02.12-22.18.37:836][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.02.12-22.18.37:839][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.02.12-22.18.37:840][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.02.12-22.18.37:842][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.02.12-22.18.37:844][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.02.12-22.18.37:846][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.02.12-22.18.37:847][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.02.12-22.18.37:849][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.02.12-22.18.37:853][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.02.12-22.18.37:853][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.02.12-22.18.37:853][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.02.12-22.18.37:868][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.02.12-22.18.37:870][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.02.12-22.18.37:872][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.02.12-22.18.37:874][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.02.12-22.18.37:875][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.02.12-22.18.37:917][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.02.12-22.18.37:948][  0]LogDerivedDataCache: Loaded boot cache 0.03s 41MB C:/Users/Roland/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.02.12-22.18.37:948][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Roland/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2016.02.12-22.18.37:948][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Roland/Documents/Unreal Projects/FurnitureTest/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.02.12-22.18.37:948][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.02.12-22.18.37:948][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Roland/Documents/Unreal Projects/FurnitureTest/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.02.12-22.18.37:948][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.02.12-22.18.37:989][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.02.12-22.18.38:000][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Roland/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.02.12-22.18.38:117][  0]LogInit: Selected Device Profile: [Windows]
+[2016.02.12-22.18.38:118][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.02.12-22.18.38:189][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.02.12-22.18.38:189][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.02.12-22.18.38:331][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.02.12-22.18.38:806][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.02.12-22.18.38:889][  0]LogAssetRegistry: FAssetRegistry took 0.0108 seconds to start up
+[2016.02.12-22.18.38:987][  0]SourceControl: Info Source control is disabled
+[2016.02.12-22.18.38:987][  0]SourceControl: Info Source control is disabled
+[2016.02.12-22.18.38:993][  0]SourceControl: Info Source control is disabled
+[2016.02.12-22.18.38:998][  0]SourceControl: Info Source control is disabled
+[2016.02.12-22.18.39:119][  0]LogObj: 28633 objects as part of root set at end of initial load.
+[2016.02.12-22.18.39:119][  0]LogUObjectAllocator: 6099744 out of 0 bytes used by permanent object pool.
+[2016.02.12-22.18.39:159][  0]LogEngine: Initializing Engine...
+[2016.02.12-22.18.39:161][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.02.12-22.18.39:161][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.02.12-22.18.39:243][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.02.12-22.18.39:248][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2016.02.12-22.18.39:255][  0]LogInit: FAudioDevice initialized.
+[2016.02.12-22.18.39:272][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/Roland/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.02.12-22.18.39:275][  0]LogInit: Texture streaming: Enabled
+[2016.02.12-22.18.39:278][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.02.12-22.18.39:278][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.2-2818068+++depot+UE4-Releases+4.10
+[2016.02.12-22.18.39:278][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId e6b69b9841288cff3e2dc5955995a486|ca0ae43d583d4678afe1b2815dcce575|357641f1-942d-4ade-bbf5-b2963bbc6ebc
+[2016.02.12-22.18.39:278][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.02.12-22.18.39:284][  0]LogInit: Transaction tracking system initialized
+[2016.02.12-22.18.39:297][  0]BlueprintLog: New page: Editor Load
+[2016.02.12-22.18.39:335][  0]LocalizationService: Info Localization service is disabled
+[2016.02.12-22.18.39:379][  0]LogConsoleResponse:Display: 
+[2016.02.12-22.18.39:451][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.02.12-22.18.39:478][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Roland/Documents/Unreal Projects/FurnitureTest/Content/' took 0.01s
+[2016.02.12-22.18.39:478][  0]SourceControl: Info Source control is disabled
+[2016.02.12-22.18.42:307][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.02.12-22.18.42:315][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.02.12-22.18.43:563][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.02.12-22.18.43:576][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.02.12-22.18.43:576][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Roland/Documents/Unreal Projects/FurnitureTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.02.12-22.18.43:577][  0]LightingResults: New page: Lighting Build
+[2016.02.12-22.18.43:579][  0]MapCheck: New page: Map Check
+[2016.02.12-22.18.43:579][  0]LightingResults: New page: Lighting Build
+[2016.02.12-22.18.43:588][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000028923553B00
+[2016.02.12-22.18.43:883][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.02.12-22.18.43:889][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.02.12-22.18.43:889][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.02.12-22.18.43:925][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 35.912ms to complete.
+[2016.02.12-22.18.43:925][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.349
+[2016.02.12-22.18.43:927][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.02.12-22.18.43:952][  0]LogCollectionManager: Loaded 0 collections in 0.001129 seconds
+[2016.02.12-22.18.43:992][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Roland/Documents/Unreal Projects/FurnitureTest/Saved/Collections/' took 0.01s
+[2016.02.12-22.18.43:992][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Roland/Documents/Unreal Projects/FurnitureTest/Content/Developers/Roland/Collections/' took 0.01s
+[2016.02.12-22.18.43:992][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Roland/Documents/Unreal Projects/FurnitureTest/Content/Collections/' took 0.01s
+[2016.02.12-22.18.43:992][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2016.02.12-22.18.43:997][  0]LogContentBrowser: Native class hierarchy populated in 0.0049 seconds. Added 1893 classes and 338 folders.
+[2016.02.12-22.18.44:000][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.02.12-22.18.44:023][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2016.02.12-22.18.44:043][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2016.02.12-22.18.44:076][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.02.12-22.18.44:080][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.02.12-22.18.44:102][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//SplashScreenThread///Thread_26d0_0///####STATCAT_Advanced#### old //STATGROUP_Threads//SplashScreenThread///Thread_1ac0_0///####STATCAT_Advanced####
+[2016.02.12-22.18.44:102][  0]LogLoad: Full Startup: 7.43 seconds (BP compile: 0.06 seconds)
+[2016.02.12-22.18.44:113][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.02.12-22.18.44:152][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.02.12-22.18.44:260][  0]LogRenderer: Reallocating scene render targets to support 1144x920 (Frame:2).
+[2016.02.12-22.18.44:449][  5]LogAssetRegistry: Asset discovery search completed in 5.5710 seconds
+[2016.02.12-22.18.44:449][  5]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.02.12-22.18.44:449][  5]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000019 seconds (updated 0 objects)
+[2016.02.12-22.18.46:849][264]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2016.02.12-22.18.47:105][264]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0004 seconds. Added 107 classes and 0 folders.
+[2016.02.12-22.18.47:470][264]LogLinker:Warning: Can't resolve asset name
+[2016.02.12-22.18.51:591][730]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.18.51:591][730]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.12-22.18.51:591][730]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 6:18:51 AM)
+[2016.02.12-22.18.51:591][730]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.02.12-22.18.51:614][730]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022388s)
+[2016.02.12-22.18.51:614][730]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.02.12-22.18.51:615][730]LogPlayLevel: PIE: World Init took: (0.000800s)
+[2016.02.12-22.18.51:615][730]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.023405s)
+[2016.02.12-22.18.51:649][730]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2016.02.12-22.18.51:654][730]LogInit: FAudioDevice initialized.
+[2016.02.12-22.18.51:699][730]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2016.02.12-22.18.51:703][730]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-14.18.51
+[2016.02.12-22.18.51:703][730]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.18.51:703][730]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.18.51:703][730]LogWorld: Bringing up level for play took: 0.002812
+[2016.02.12-22.18.51:704][730]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.42
+[2016.02.12-22.18.51:704][730]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.18.53:771][974]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.18.53:806][974]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.18.53:826][974]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000028961D84900
+[2016.02.12-22.19.17:368][743]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_InputKey_540.EdGraphPin_5619''
+[2016.02.12-22.19.17:368][743]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_204.EdGraphPin_5873''
+[2016.02.12-22.19.17:368][743]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_204.EdGraphPin_5871''
+[2016.02.12-22.19.17:369][743]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_3892.EdGraphPin_5883''
+[2016.02.12-22.19.17:369][743]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_3892.EdGraphPin_5885''
+[2016.02.12-22.19.23:210][439]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_InputKey_540.EdGraphPin_5619''
+[2016.02.12-22.19.23:210][439]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_204.EdGraphPin_5873''
+[2016.02.12-22.19.23:211][439]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_204.EdGraphPin_5871''
+[2016.02.12-22.19.23:211][439]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_3892.EdGraphPin_5883''
+[2016.02.12-22.19.23:211][439]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_3892.EdGraphPin_5885''
+[2016.02.12-22.19.49:448][522]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_204.EdGraphPin_23989''
+[2016.02.12-22.19.49:448][522]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_InputKey_210.EdGraphPin_24012''
+[2016.02.12-22.19.49:448][522]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CommutativeAssociativeBinaryOperator_204.EdGraphPin_23987''
+[2016.02.12-22.19.49:448][522]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_3892.EdGraphPin_24001''
+[2016.02.12-22.19.49:449][522]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2431.EdGraphPin_24011''
+[2016.02.12-22.20.53:972][651]BlueprintLog: New page: Compile ThirdPersonExampleMap
+[2016.02.12-22.20.54:012][651]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.02.12-22.20.54:035][651]BlueprintEditorCompileResults: Info [0137.36] Compile of ThirdPersonExampleMap successful! [in 62 ms]
+[2016.02.12-22.20.56:261][885]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.20.56:261][885]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.12-22.20.56:261][885]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 6:20:56 AM)
+[2016.02.12-22.20.56:261][885]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.02.12-22.20.56:283][885]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021264s)
+[2016.02.12-22.20.56:284][885]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.02.12-22.20.56:284][885]LogPlayLevel: PIE: World Init took: (0.000983s)
+[2016.02.12-22.20.56:284][885]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.022459s)
+[2016.02.12-22.20.56:311][885]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2016.02.12-22.20.56:316][885]LogInit: FAudioDevice initialized.
+[2016.02.12-22.20.56:344][885]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2016.02.12-22.20.56:347][885]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-14.20.56
+[2016.02.12-22.20.56:347][885]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.20.56:348][885]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.20.56:348][885]LogWorld: Bringing up level for play took: 0.003024
+[2016.02.12-22.20.56:348][885]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.225
+[2016.02.12-22.20.56:349][885]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.21.00:796][351]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.21.00:825][351]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.21.00:864][352]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000028978B85E40
+[2016.02.12-22.21.09:676][350]BlueprintLog: New page: Compile ThirdPersonExampleMap
+[2016.02.12-22.21.09:738][350]BlueprintEditorCompileResults: Info [0153.07] Compile of ThirdPersonExampleMap successful! [in 61 ms]
+[2016.02.12-22.21.10:895][486]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.21.10:895][486]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.12-22.21.10:895][486]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 6:21:10 AM)
+[2016.02.12-22.21.10:896][486]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.02.12-22.21.10:916][486]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020320s)
+[2016.02.12-22.21.10:916][486]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.02.12-22.21.10:917][486]LogPlayLevel: PIE: World Init took: (0.000725s)
+[2016.02.12-22.21.10:917][486]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.021259s)
+[2016.02.12-22.21.10:944][486]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2016.02.12-22.21.10:950][486]LogInit: FAudioDevice initialized.
+[2016.02.12-22.21.10:980][486]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2016.02.12-22.21.10:984][486]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-14.21.10
+[2016.02.12-22.21.10:984][486]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.21.10:984][486]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.21.10:984][486]LogWorld: Bringing up level for play took: 0.003118
+[2016.02.12-22.21.10:985][486]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.861
+[2016.02.12-22.21.10:985][486]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.21.31:743][973]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.21.31:776][973]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.21.31:796][973]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000028914B37D80
+[2016.02.12-22.21.57:583][ 40]BlueprintLog: New page: Compile ThirdPersonExampleMap
+[2016.02.12-22.21.57:645][ 40]BlueprintEditorCompileResults: Info [0200.97] Compile of ThirdPersonExampleMap successful! [in 62 ms]
+[2016.02.12-22.21.58:334][120]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.21.58:334][120]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.12-22.21.58:334][120]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 6:21:58 AM)
+[2016.02.12-22.21.58:334][120]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.02.12-22.21.58:355][120]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021152s)
+[2016.02.12-22.21.58:356][120]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.02.12-22.21.58:356][120]LogPlayLevel: PIE: World Init took: (0.000694s)
+[2016.02.12-22.21.58:356][120]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.022024s)
+[2016.02.12-22.21.58:382][120]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2016.02.12-22.21.58:387][120]LogInit: FAudioDevice initialized.
+[2016.02.12-22.21.58:416][120]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2016.02.12-22.21.58:420][120]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-14.21.58
+[2016.02.12-22.21.58:420][120]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.21.58:420][120]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.21.58:420][120]LogWorld: Bringing up level for play took: 0.003150
+[2016.02.12-22.21.58:421][120]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.297
+[2016.02.12-22.21.58:421][120]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.22.04:574][856]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.22.04:605][856]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.22.04:627][856]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002896EBA16C0
+[2016.02.12-22.23.34:228][629]LogEditorTransaction: Undo Change Key Value
+[2016.02.12-22.23.34:765][669]LogEditorTransaction: Undo Delete current selection
+[2016.02.12-22.23.38:590][108]BlueprintLog: New page: Compile ThirdPersonExampleMap
+[2016.02.12-22.23.38:653][108]BlueprintEditorCompileResults: Info [0301.98] Compile of ThirdPersonExampleMap successful! [in 62 ms]
+[2016.02.12-22.23.45:192][656]LogSavePackage: Save=162.407333ms
+[2016.02.12-22.23.45:192][656]LogSavePackage: Moving '../../../../../../Users/Roland/Documents/Unreal Projects/FurnitureTest/Saved/ThirdPersonExampleMap5BC681B44C6FA0022600B1BD41A84FBE.tmp' to '../../../../../../Users/Roland/Documents/Unreal Projects/FurnitureTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.02.12-22.23.45:195][656]LogSavePackage: Total save time: 177.250229ms
+[2016.02.12-22.23.45:195][656]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Roland/Documents/Unreal Projects/FurnitureTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.02.12-22.23.45:254][656]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.296
+[2016.02.12-22.23.45:926][734]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.23.45:926][734]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.12-22.23.45:926][734]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 6:23:45 AM)
+[2016.02.12-22.23.45:926][734]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.02.12-22.23.45:948][734]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021500s)
+[2016.02.12-22.23.45:948][734]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.02.12-22.23.45:949][734]LogPlayLevel: PIE: World Init took: (0.000707s)
+[2016.02.12-22.23.45:949][734]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.022409s)
+[2016.02.12-22.23.45:976][734]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2016.02.12-22.23.45:981][734]LogInit: FAudioDevice initialized.
+[2016.02.12-22.23.46:010][734]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2016.02.12-22.23.46:014][734]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-14.23.46
+[2016.02.12-22.23.46:014][734]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.23.46:014][734]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.23.46:015][734]LogWorld: Bringing up level for play took: 0.003180
+[2016.02.12-22.23.46:015][734]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.108
+[2016.02.12-22.23.46:015][734]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.23.58:968][286]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.23.59:002][286]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.23.59:022][286]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002894603E660
+[2016.02.12-22.24.23:257][ 26]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.24.23:257][ 26]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.12-22.24.23:257][ 26]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 6:24:23 AM)
+[2016.02.12-22.24.23:257][ 26]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.02.12-22.24.23:278][ 26]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020664s)
+[2016.02.12-22.24.23:278][ 26]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.02.12-22.24.23:279][ 26]LogPlayLevel: PIE: World Init took: (0.000654s)
+[2016.02.12-22.24.23:279][ 26]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.021498s)
+[2016.02.12-22.24.23:306][ 26]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2016.02.12-22.24.23:310][ 26]LogInit: FAudioDevice initialized.
+[2016.02.12-22.24.23:340][ 26]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2016.02.12-22.24.23:344][ 26]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-14.24.23
+[2016.02.12-22.24.23:344][ 26]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.24.23:344][ 26]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.24.23:344][ 26]LogWorld: Bringing up level for play took: 0.003244
+[2016.02.12-22.24.23:345][ 26]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.779
+[2016.02.12-22.24.23:345][ 26]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.25.51:549][917]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.25.51:584][917]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.25.51:643][918]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002894603DEE0
+[2016.02.12-22.30.55:644][880]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.30.55:644][880]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.12-22.30.55:644][880]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 6:30:55 AM)
+[2016.02.12-22.30.55:644][880]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.02.12-22.30.55:667][880]LogPlayLevel: PIE: StaticDuplicateObject took: (0.023441s)
+[2016.02.12-22.30.55:669][880]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.02.12-22.30.55:670][880]LogPlayLevel: PIE: World Init took: (0.002191s)
+[2016.02.12-22.30.55:670][880]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.025810s)
+[2016.02.12-22.30.55:696][880]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2016.02.12-22.30.55:702][880]LogInit: FAudioDevice initialized.
+[2016.02.12-22.30.55:735][880]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2016.02.12-22.30.55:739][880]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-14.30.55
+[2016.02.12-22.30.55:739][880]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.30.55:739][880]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.30.55:739][880]LogWorld: Bringing up level for play took: 0.003211
+[2016.02.12-22.30.55:740][880]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.383
+[2016.02.12-22.30.55:740][880]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.30.57:666][ 92]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:003E
-[2016.02.12-21.50.46:569][505]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.46:569][505]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:05B5
+[2016.02.12-22.30.57:667][ 92]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.57:667][ 92]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:0070
-[2016.02.12-21.50.46:569][505]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.47:080][551]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:05E7
+[2016.02.12-22.30.57:667][ 92]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.57:667][ 92]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:003E
-[2016.02.12-21.50.47:080][551]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.47:080][551]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:066A
+[2016.02.12-22.30.57:667][ 92]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.57:848][112]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:0070
-[2016.02.12-21.50.47:080][551]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.47:370][575]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:05B5
+[2016.02.12-22.30.57:848][112]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.57:848][112]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:003E
-[2016.02.12-21.50.47:371][575]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.47:371][575]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:05E7
+[2016.02.12-22.30.57:848][112]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.57:848][112]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:0070
-[2016.02.12-21.50.47:371][575]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.47:672][601]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:066A
+[2016.02.12-22.30.57:849][112]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.58:100][140]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:003E
-[2016.02.12-21.50.47:672][601]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.47:672][601]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:05B5
+[2016.02.12-22.30.58:101][140]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.58:101][140]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:0070
-[2016.02.12-21.50.47:672][601]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.48:119][641]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:05E7
+[2016.02.12-22.30.58:101][140]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.58:101][140]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:003E
-[2016.02.12-21.50.48:120][641]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.48:120][641]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:066A
+[2016.02.12-22.30.58:101][140]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.58:843][222]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:0070
-[2016.02.12-21.50.48:120][641]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.48:700][692]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:05B5
+[2016.02.12-22.30.58:843][222]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.58:843][222]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:003E
-[2016.02.12-21.50.48:700][692]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.48:700][692]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:05E7
+[2016.02.12-22.30.58:843][222]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.58:843][222]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:0070
-[2016.02.12-21.50.48:701][692]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.49:466][755]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:066A
+[2016.02.12-22.30.58:843][222]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.59:109][251]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:003E
-[2016.02.12-21.50.49:466][755]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.49:466][755]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:05B5
+[2016.02.12-22.30.59:109][251]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.59:109][251]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:0070
-[2016.02.12-21.50.49:467][755]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.50:936][875]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:05E7
+[2016.02.12-22.30.59:110][251]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.59:110][251]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:003E
-[2016.02.12-21.50.50:936][875]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.50:936][875]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:066A
+[2016.02.12-22.30.59:110][251]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.59:350][277]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:0070
-[2016.02.12-21.50.50:936][875]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.52:411][ 13]LogScript:Warning: Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue'
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:05B5
+[2016.02.12-22.30.59:350][277]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.59:350][277]LogScript:Warning: Accessed None 'CallFunc_FinishSpawningActor_ReturnValue'
 	ThirdPersonExampleMap_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap_C_0
-	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:003E
-[2016.02.12-21.50.52:412][ 13]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.52:412][ 13]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.53:122][ 77]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.53:122][ 77]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.55:281][268]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.55:281][268]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.56:443][364]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.56:444][364]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.57:054][421]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.57:055][421]PIE:Error: Error Cannot access 'couch_BP_C_6'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.50.59:235][618]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.50.59:235][618]OCULUS: Info: 02/12/16 21:50:59: [IPC] Call Stats for Hmd_Release : x1: C2S=66.6827, S2C=12.008, Runtime=49.0539 (microseconds) C2Ssize=20, S2Csize=25 (bytes)
-
-[2016.02.12-21.50.59:277][618]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.50.59:344][618]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019587144FE0
-[2016.02.12-21.51.02:922][902]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.51.02:923][902]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.02.12-21.51.02:923][902]OCULUS: Info: 02/12/16 21:51:02: [IPC] Call Stats for Hmd_Create : x1: C2S=24.016, S2C=43.4332, Runtime=13.5409 (microseconds) C2Ssize=19, S2Csize=171 (bytes)
-
-[2016.02.12-21.51.02:923][902]OCULUS: Info: 02/12/16 21:51:02: [IPC] Call Stats for Hmd_GetHmdInfo : x1: C2S=12.008, S2C=98.3634, Runtime=6.89821 (microseconds) C2Ssize=23, S2Csize=699 (bytes)
-
-[2016.02.12-21.51.02:923][902]OCULUS: Info: 02/12/16 21:51:02: [IPC] Call Stats for SetNumberValue : x1: C2S=55.4412, S2C=38.8344, Runtime=7.66468 (microseconds) C2Ssize=55, S2Csize=25 (bytes)
-
-[2016.02.12-21.51.02:923][902]OCULUS: Info: 02/12/16 21:51:02: [IPC] Call Stats for SetNumberValues : x1: C2S=46.2436, S2C=39.0899, Runtime=7.1537 (microseconds) C2Ssize=81, S2Csize=25 (bytes)
-
-[2016.02.12-21.51.02:924][902]OCULUS: Info: 02/12/16 21:51:02: [IPC] Call Stats for Hmd_SetEnabledCaps : x1: C2S=46.7545, S2C=15.8403, Runtime=35.513 (microseconds) C2Ssize=35, S2Csize=33 (bytes)
-
-[2016.02.12-21.51.02:924][902]OCULUS: Info: 02/12/16 21:51:02: [IPC] Call Stats for Hmd_ConfigureTracking : x2: C2S=48.6707, S2C=14.8184, Runtime=27.3373 (microseconds) C2Ssize=46, S2Csize=25 (bytes)
-
-[2016.02.12-21.51.02:924][902]LogHMD:Warning: HMD Oculus Rift DK2, res = 1920 x 1080
-[2016.02.12-21.51.02:924][902]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 5:51:02 AM)
-[2016.02.12-21.51.02:924][902]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.02.12-21.51.02:957][902]LogPlayLevel: PIE: StaticDuplicateObject took: (0.032945s)
-[2016.02.12-21.51.02:958][902]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.02.12-21.51.02:958][902]LogPlayLevel: PIE: World Init took: (0.001392s)
-[2016.02.12-21.51.02:958][902]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.034755s)
-[2016.02.12-21.51.03:016][902]LogInit: XAudio2 using 'BenQ BL3200-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2016.02.12-21.51.03:022][902]LogInit: FAudioDevice initialized.
-[2016.02.12-21.51.03:066][902]LogWorld: Game class is 'ThirdPersonGameMode_C'
-[2016.02.12-21.51.03:076][902]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-13.51.03
-[2016.02.12-21.51.03:076][902]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.51.03:077][902]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.51.03:077][902]LogWorld: Bringing up level for play took: 0.008968
-[2016.02.12-21.51.03:079][902]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.083
-[2016.02.12-21.51.03:079][902]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.51.03:331][921]OCULUS: Info: 02/12/16 21:51:03: [From Service] 02/12/16 21:51:03: [Sensor2Impl] Lost 20 IMU samples: 21990 2 22
-
-[2016.02.12-21.51.31:525][361]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.51.31:526][361]OCULUS: Info: 02/12/16 21:51:31: [IPC] Call Stats for Hmd_Release : x1: C2S=41.6447, S2C=24.016, Runtime=34.491 (microseconds) C2Ssize=20, S2Csize=25 (bytes)
-
-[2016.02.12-21.51.31:570][361]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.51.31:643][362]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019588327240
-[2016.02.12-21.51.52:177][180]BlueprintLog: New page: Compile ThirdPersonExampleMap
-[2016.02.12-21.51.52:291][180]BlueprintEditorCompileResults: Info [1056.62] Compile of ThirdPersonExampleMap successful! [in 112 ms]
-[2016.02.12-21.51.54:485][380]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.51.54:485][380]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.02.12-21.51.54:485][380]OCULUS: Info: 02/12/16 21:51:54: [IPC] Call Stats for Hmd_Create : x1: C2S=25.5489, S2C=41.3893, Runtime=14.8184 (microseconds) C2Ssize=19, S2Csize=171 (bytes)
-
-[2016.02.12-21.51.54:486][380]OCULUS: Info: 02/12/16 21:51:54: [IPC] Call Stats for Hmd_GetHmdInfo : x1: C2S=42.6667, S2C=17.6288, Runtime=8.68663 (microseconds) C2Ssize=23, S2Csize=699 (bytes)
-
-[2016.02.12-21.51.54:486][380]OCULUS: Info: 02/12/16 21:51:54: [IPC] Call Stats for SetNumberValue : x1: C2S=42.4112, S2C=45.9881, Runtime=7.92017 (microseconds) C2Ssize=55, S2Csize=25 (bytes)
-
-[2016.02.12-21.51.54:486][380]OCULUS: Info: 02/12/16 21:51:54: [IPC] Call Stats for SetNumberValues : x1: C2S=21.9721, S2C=14.3074, Runtime=8.68663 (microseconds) C2Ssize=81, S2Csize=25 (bytes)
-
-[2016.02.12-21.51.54:486][380]OCULUS: Info: 02/12/16 21:51:54: [IPC] Call Stats for Hmd_SetEnabledCaps : x1: C2S=45.4771, S2C=10.2196, Runtime=39.0899 (microseconds) C2Ssize=35, S2Csize=33 (bytes)
-
-[2016.02.12-21.51.54:486][380]OCULUS: Info: 02/12/16 21:51:54: [IPC] Call Stats for Hmd_ConfigureTracking : x2: C2S=24.7825, S2C=9.58085, Runtime=25.9322 (microseconds) C2Ssize=46, S2Csize=25 (bytes)
-
-[2016.02.12-21.51.54:487][380]LogHMD:Warning: HMD Oculus Rift DK2, res = 1920 x 1080
-[2016.02.12-21.51.54:487][380]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 5:51:54 AM)
-[2016.02.12-21.51.54:487][380]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.02.12-21.51.54:526][380]LogPlayLevel: PIE: StaticDuplicateObject took: (0.039264s)
-[2016.02.12-21.51.54:528][380]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.02.12-21.51.54:528][380]LogPlayLevel: PIE: World Init took: (0.001541s)
-[2016.02.12-21.51.54:528][380]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.041148s)
-[2016.02.12-21.51.54:585][380]LogInit: XAudio2 using 'BenQ BL3200-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2016.02.12-21.51.54:591][380]LogInit: FAudioDevice initialized.
-[2016.02.12-21.51.54:637][380]LogWorld: Game class is 'ThirdPersonGameMode_C'
-[2016.02.12-21.51.54:648][380]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-13.51.54
-[2016.02.12-21.51.54:648][380]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.51.54:648][380]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.51.54:649][380]LogWorld: Bringing up level for play took: 0.009275
-[2016.02.12-21.51.54:651][380]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.511
-[2016.02.12-21.51.54:651][380]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.51.55:036][409]OCULUS: Info: 02/12/16 21:51:55: [From Service] 02/12/16 21:51:55: [Sensor2Impl] Lost 8 IMU samples: 9995 2 10
-
-[2016.02.12-21.53.20:186][855]PIE:Error: Error Cannot access 'couch_BP_C_13'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.20:430][878]PIE:Error: Error Cannot access 'couch_BP_C_13'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.20:601][894]PIE:Error: Error Cannot access 'couch_BP_C_13'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.20:740][906]PIE:Error: Error Cannot access 'couch_BP_C_13'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.20:897][920]PIE:Error: Error Cannot access 'couch_BP_C_13'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.21:058][934]PIE:Error: Error Cannot access 'couch_BP_C_13'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.21:245][951]PIE:Error: Error Cannot access 'couch_BP_C_13'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.21:427][968]PIE:Error: Error Cannot access 'couch_BP_C_13'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.21:585][982]PIE:Error: Error Cannot access 'couch_BP_C_13'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.21:758][997]PIE:Error: Error Cannot access 'couch_BP_C_13'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.21:915][ 10]PIE:Error: Error Cannot access 'couch_BP_C_13'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.22:062][ 22]PIE:Error: Error Cannot access 'couch_BP_C_13'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.30:160][706]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.53.30:161][706]OCULUS: Info: 02/12/16 21:53:30: [IPC] Call Stats for Hmd_Release : x1: C2S=28.3593, S2C=13.7964, Runtime=50.3314 (microseconds) C2Ssize=20, S2Csize=25 (bytes)
-
-[2016.02.12-21.53.30:201][706]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.53.30:240][706]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000019588325940
-[2016.02.12-21.53.41:466][687]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.53.41:466][687]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.02.12-21.53.41:466][687]OCULUS: Info: 02/12/16 21:53:41: [IPC] Call Stats for Hmd_Create : x1: C2S=51.6088, S2C=41.9002, Runtime=18.1397 (microseconds) C2Ssize=19, S2Csize=171 (bytes)
-
-[2016.02.12-21.53.41:467][687]OCULUS: Info: 02/12/16 21:53:41: [IPC] Call Stats for Hmd_GetHmdInfo : x1: C2S=43.6887, S2C=45.4771, Runtime=9.96408 (microseconds) C2Ssize=23, S2Csize=699 (bytes)
-
-[2016.02.12-21.53.41:467][687]OCULUS: Info: 02/12/16 21:53:41: [IPC] Call Stats for SetNumberValue : x1: C2S=35.2575, S2C=20.6946, Runtime=11.2415 (microseconds) C2Ssize=55, S2Csize=25 (bytes)
-
-[2016.02.12-21.53.41:467][687]OCULUS: Info: 02/12/16 21:53:41: [IPC] Call Stats for SetNumberValues : x1: C2S=38.5789, S2C=16.3513, Runtime=8.43115 (microseconds) C2Ssize=81, S2Csize=25 (bytes)
-
-[2016.02.12-21.53.41:467][687]OCULUS: Info: 02/12/16 21:53:41: [IPC] Call Stats for Hmd_SetEnabledCaps : x1: C2S=17.6288, S2C=9.70859, Runtime=42.1557 (microseconds) C2Ssize=35, S2Csize=33 (bytes)
-
-[2016.02.12-21.53.41:467][687]OCULUS: Info: 02/12/16 21:53:41: [IPC] Call Stats for Hmd_ConfigureTracking : x2: C2S=26.0599, S2C=10.0918, Runtime=27.7206 (microseconds) C2Ssize=46, S2Csize=25 (bytes)
-
-[2016.02.12-21.53.41:468][687]LogHMD:Warning: HMD Oculus Rift DK2, res = 1920 x 1080
-[2016.02.12-21.53.41:468][687]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 5:53:41 AM)
-[2016.02.12-21.53.41:468][687]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.02.12-21.53.41:506][687]LogPlayLevel: PIE: StaticDuplicateObject took: (0.037437s)
-[2016.02.12-21.53.41:507][687]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.02.12-21.53.41:507][687]LogPlayLevel: PIE: World Init took: (0.001376s)
-[2016.02.12-21.53.41:507][687]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.039220s)
-[2016.02.12-21.53.41:571][687]LogInit: XAudio2 using 'BenQ BL3200-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2016.02.12-21.53.41:577][687]LogInit: FAudioDevice initialized.
-[2016.02.12-21.53.41:620][687]LogWorld: Game class is 'ThirdPersonGameMode_C'
-[2016.02.12-21.53.41:630][687]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-13.53.41
-[2016.02.12-21.53.41:630][687]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.53.41:631][687]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2016.02.12-21.53.41:631][687]LogWorld: Bringing up level for play took: 0.009445
-[2016.02.12-21.53.41:633][687]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.471
-[2016.02.12-21.53.41:633][687]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.02.12-21.53.41:783][697]OCULUS: Info: 02/12/16 21:53:41: [From Service] 02/12/16 21:53:41: [Sensor2Impl] Lost 12 IMU samples: 13993 2 14
-
-[2016.02.12-21.53.48:825][287]PIE:Error: Error Cannot access 'couch_BP_C_26'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.48:979][301]PIE:Error: Error Cannot access 'couch_BP_C_26'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.49:133][314]PIE:Error: Error Cannot access 'couch_BP_C_26'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.49:257][325]PIE:Error: Error Cannot access 'couch_BP_C_26'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.49:419][339]PIE:Error: Error Cannot access 'couch_BP_C_26'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.49:601][355]PIE:Error: Error Cannot access 'couch_BP_C_26'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
-[2016.02.12-21.53.49:777][370]PIE:Error: Error Cannot access 'couch_BP_C_26'.
+	Function /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C:ExecuteUbergraph_ThirdPersonExampleMap:05E7
+[2016.02.12-22.30.59:350][277]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.59:350][277]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.59:735][319]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.59:735][319]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.59:735][319]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.59:988][347]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.59:988][347]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.30.59:988][347]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.00:219][372]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.00:220][372]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.00:220][372]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.00:549][409]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.00:549][409]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.00:549][409]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.00:737][430]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.00:737][430]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.00:737][430]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.01:568][523]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.01:568][523]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.01:568][523]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node SetActorLocation in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.02:215][594]PIE:Error: Error Accessed None 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.18:877][405]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.31.18:913][405]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.31.18:946][405]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000028979864900
+[2016.02.12-22.31.25:975][173]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.31.25:975][173]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.12-22.31.25:975][173]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 6:31:25 AM)
+[2016.02.12-22.31.25:975][173]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.02.12-22.31.25:996][173]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021016s)
+[2016.02.12-22.31.25:996][173]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.02.12-22.31.25:997][173]LogPlayLevel: PIE: World Init took: (0.000868s)
+[2016.02.12-22.31.25:997][173]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.022078s)
+[2016.02.12-22.31.26:023][173]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2016.02.12-22.31.26:029][173]LogInit: FAudioDevice initialized.
+[2016.02.12-22.31.26:062][173]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2016.02.12-22.31.26:066][173]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-14.31.26
+[2016.02.12-22.31.26:066][173]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.31.26:066][173]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.31.26:066][173]LogWorld: Bringing up level for play took: 0.003431
+[2016.02.12-22.31.26:067][173]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.057
+[2016.02.12-22.31.26:067][173]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.31.29:377][528]PIE:Error: Error Cannot access 'couch_BP_C_19'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.29:517][543]PIE:Error: Error Cannot access 'couch_BP_C_19'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.29:670][559]PIE:Error: Error Cannot access 'couch_BP_C_19'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.29:805][574]PIE:Error: Error Cannot access 'couch_BP_C_19'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.29:941][589]PIE:Error: Error Cannot access 'couch_BP_C_19'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.30:080][604]PIE:Error: Error Cannot access 'couch_BP_C_19'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.30:212][618]PIE:Error: Error Cannot access 'couch_BP_C_19'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.30:357][634]PIE:Error: Error Cannot access 'couch_BP_C_19'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.30:497][649]PIE:Error: Error Cannot access 'couch_BP_C_19'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.30:657][666]PIE:Error: Error Cannot access 'couch_BP_C_19'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.30:813][683]PIE:Error: Error Cannot access 'couch_BP_C_19'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.30:980][701]PIE:Error: Error Cannot access 'couch_BP_C_19'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.31:580][767]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.31.31:613][767]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.31.31:647][767]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002894E114F40
+[2016.02.12-22.31.40:953][791]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.31.40:953][791]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.02.12-22.31.40:953][791]PIE: New page: PIE session: ThirdPersonExampleMap (Feb 12, 2016, 6:31:40 AM)
+[2016.02.12-22.31.40:953][791]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.02.12-22.31.40:975][791]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021857s)
+[2016.02.12-22.31.40:976][791]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.02.12-22.31.40:976][791]LogPlayLevel: PIE: World Init took: (0.000812s)
+[2016.02.12-22.31.40:976][791]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.022863s)
+[2016.02.12-22.31.41:003][791]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 8 channels at 48 kHz using 32 bits per sample (channel mask 0x63f)
+[2016.02.12-22.31.41:008][791]LogInit: FAudioDevice initialized.
+[2016.02.12-22.31.41:040][791]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2016.02.12-22.31.41:044][791]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.02.12-14.31.41
+[2016.02.12-22.31.41:044][791]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.31.41:044][791]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2016.02.12-22.31.41:045][791]LogWorld: Bringing up level for play took: 0.003160
+[2016.02.12-22.31.41:045][791]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.922
+[2016.02.12-22.31.41:045][791]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.31.47:340][494]PIE:Error: Error Cannot access 'couch_BP_C_22'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.47:529][515]PIE:Error: Error Cannot access 'couch_BP_C_22'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.47:717][536]PIE:Error: Error Cannot access 'couch_BP_C_22'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.47:880][554]PIE:Error: Error Cannot access 'couch_BP_C_22'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.48:069][575]PIE:Error: Error Cannot access 'couch_BP_C_22'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.48:213][591]PIE:Error: Error Cannot access 'couch_BP_C_22'. It is pending kill. Property: 'CallFunc_FinishSpawningActor_ReturnValue' from node DestroyActor in graph 'EventGraph' in blueprint ThirdPersonExampleMap
+[2016.02.12-22.31.48:720][648]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.02.12-22.31.48:756][648]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:Persistent
